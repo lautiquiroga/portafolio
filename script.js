@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
   sectionAll.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 70;
+    const sectionTop = current.offsetTop - 100;
     const sectionId = current.getAttribute("id");
 
     if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -98,3 +98,31 @@ document.querySelector(".go-top-container").addEventListener("click", () => {
 //   const resultado = regex.test(target);
 //   return resultado;
 // }
+
+// const puntoDeRedireccion = 500;
+// // const nuevaUbicacion = document.getElementById('proyectos');
+
+// window.addEventListener("scroll", function() {
+//   const posicionActual = window.scrollY;
+//   if (posicionActual >= puntoDeRedireccion) {
+//     window.location.href = btnEnviar;
+//   }
+// });
+
+const penultimo = document.querySelector('.penultimo');
+const ultimo = document.querySelector('.ultimo');
+mobile();
+
+
+function mobile() {
+  if (window.innerWidth < 1300) {
+
+    penultimo.setAttribute("data-aos", "zoom-in-up");
+    penultimo.setAttribute("data-aos-anchor-placement", "center-bottom");
+
+    ultimo.setAttribute("data-aos", "zoom-in-up");
+    ultimo.setAttribute("data-aos-anchor-placement", "center-bottom");  
+  }
+}
+
+AOS.init()
