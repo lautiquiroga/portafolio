@@ -2,8 +2,8 @@
 
 .header {
   justify-content: space-between;
-  padding: 0.8rem 3rem;
-  z-index: 2;
+  padding: 0.8rem 7rem 0.8rem 0;
+  z-index: 100;
 }
 
 nav.nav_menu {
@@ -23,9 +23,9 @@ nav.nav_menu a {
 
 nav.nav_menu a:hover,
 nav.nav_menu a.active {
-  color: var(--beaver);
+  color: rgb(44, 131, 189);
   padding: 0.5rem;
-  border-bottom: 1px solid var(--beaver);
+  border-bottom: 1px solid rgb(44, 131, 189);
   transition: all 0.5s;
 }
 
@@ -42,7 +42,7 @@ div.btn {
 .home {
   display: flex;
   flex-direction: row-reverse;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   height: 100vh;
 }
 
@@ -52,19 +52,13 @@ div.btn {
 
 .image_home {
   object-fit: contain;
-  border-radius: 7%;
-  -webkit-border-radius: 7%;
-  -moz-border-radius: 7%;
-  -ms-border-radius: 7%;
-  -o-border-radius: 7%;
-  filter: brightness(0.85);
-  -webkit-filter: brightness(0.85);
+  height: 680px;
 }
 
 .home_info {
   width: 50%;
   padding-left: 6rem;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .container_text-info {
@@ -77,22 +71,23 @@ div.btn {
 }
 
 .home_text-1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin-left: 0.4rem;
   font-weight: bold;
 }
 
 .home_text-2 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: bold;
-  color: var(--white);
+  color: rgb(44, 131, 189);
+  margin-top: -25px;
 }
 
 .home_text-3 {
+  display: inline;
   margin: 0 0 3rem 0;
-  font-size: 2rem;
-  width: 40rem;
-  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  text-align: start;
 }
 
 .container_parrafo-info {
@@ -103,7 +98,8 @@ div.btn {
 .container_parrafo-info p {
   font-family: "Cooper Hewitt";
   color: var(--light-grey);
-  font-size:2rem;
+  margin-top: 80px;
+  font-size: 2rem;
   letter-spacing: 1px;
   line-height: 2.8rem;
 }
@@ -116,8 +112,8 @@ div.btn {
 
 .cv_button {
   background: none;
-  color: var(--beaver);
-  border: 1px solid var(--beaver);
+  color: rgb(44, 131, 189);
+  border: 1px solid rgb(44, 131, 189);
   margin-right: 1rem;
   transition: 0.2s;
 }
@@ -130,7 +126,7 @@ div.btn {
 
 .contact_button {
   display: inline-block;
-  background-color: var(--beaver);
+  background-color: rgb(44, 131, 189);
   border-radius: 3rem;
   padding: 0.7rem 4rem 0.6rem 4rem;
   color: var(--jet);
@@ -168,13 +164,14 @@ div.btn {
 
 /* Sobre Mí */
 
-.sobreMi {
+/* .sobreMi {
   padding-bottom: 4rem;
-}
+} */
 
 .sobreMi h1 {
-  margin-top: 2rem;
+  margin-bottom: 4rem;
   font-size: 3rem;
+  color:rgb(44, 131, 189);
 }
 
 .container_content-sobreMi {
@@ -186,11 +183,12 @@ div.btn {
   padding: 0 5% 0 3rem;
 }
 
-.title_sobreMi {
+/* .title_sobreMi {
   text-align: start;
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
-}
+  margin-top: 50px;
+} */
 
 .texto_sobreMi {
   text-align: start;
@@ -204,7 +202,7 @@ div.btn {
 /* Formación */
 
 .formacion {
-  padding: 6rem 0 3rem 0;
+  padding: 8rem 0 3rem 0;
   position: relative;
 }
 
@@ -213,7 +211,7 @@ div.btn {
 }
 
 .cards--formacion:hover {
-  border: 1px solid var(--beaver);
+  border: 1px solid rgb(44, 131, 189);
   box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
     0 25px 10px -24px rgb(5 5 5 / 10%);
   transform: scale(1.1);
@@ -237,7 +235,7 @@ div.btn {
 
 .cards--proyectos {
   width: 40rem;
-  height: 50rem;
+  height: 55rem;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -289,8 +287,9 @@ div.btn {
 
 
 @media only screen and (max-width: 1300px) {
+  
   .image_home {
-    width: 26rem;
+    width: 40rem;
   }
   .container_parrafo-info p {
     font-size: 1.5rem;
@@ -299,5 +298,31 @@ div.btn {
   }
   .home_text-2 {
     font-size: 5rem;
+    margin-bottom: 1rem;
+
   }
+  .home_text-1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .header {
+    padding-right: 0;
+  }
+  .home_text-3 {
+   font-size: 2rem;
+  }
+  .home {
+    padding: 0;
+  }
+  .image_sobreMi {
+    display: none;
+  }
+  .container_texto-sobreMi {
+    margin: 0;
+    width: auto;
+    padding: 5rem 10rem 5rem 10rem;
+  }
+  .container_content-sobreMi {
+    flex-direction: column;
+}
 }
