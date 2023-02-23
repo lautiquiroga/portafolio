@@ -1,4 +1,4 @@
-/* Header */
+/* Header
 
 nav.nav_menu.active {
   width: 50%;
@@ -8,7 +8,7 @@ nav.nav_menu.active {
 
 /* Home */
 
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   .image_home {
     width: 26rem;
     border-radius: 7%;
@@ -19,9 +19,9 @@ nav.nav_menu.active {
     filter: brightness(0.9);
     -webkit-filter: brightness(0.9);
   }
-}
+} */
 
-.container_text-info {
+/* .container_text-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ nav.nav_menu.active {
 
 .home_text-2 {
   font-size: 3.6rem;
-}
+} */
 
 /* Sobre mi */
 
@@ -102,4 +102,6 @@ nav.nav_menu.active {
 .container--contacto {
   margin: 0 auto;
   width: 80%;
-}
+} 
+
+
