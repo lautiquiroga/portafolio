@@ -326,24 +326,41 @@ span + span {
 }
 
 .cv_button {
+  display: inline-block;
   background-color: rgb(44, 131, 189);
   border-radius: 3rem;
-  padding: 0.6rem 2rem 0.5rem 2rem;
+  padding: 0.6rem 2rem;
   color: var(--jet);
   font-family: "Cooper Hewitt";
   font-weight: bold;
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin: 2rem 0;
   border: none;
   cursor: pointer;
 }
 
 .contact_button {
-  display: none;
+  display: inline-block;
+  background-color: rgb(44, 131, 189);
+  border-radius: 3rem;
+  padding: 0.6rem 3.4rem;
+  color: var(--jet);
+  font-family: "Cooper Hewitt";
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
+.contact_button:hover {
+  background-color: #726d97;
+  box-shadow: 0px 2px 10px #141414;
+  transition: 1s transform;
+}
 .links {
   display: flex;
   justify-content: center;
@@ -917,10 +934,13 @@ footer {
   }
 }
 
-
 @media only screen and (max-width: 980px) {
   html {
     width: 100vw;
+  }
+  .links {
+    /* display: none; */
+    z-index: 100;
   }
   .header {
     background-color: transparent;
@@ -957,7 +977,10 @@ footer {
     font-size: 2.7rem;
   }
   .cv_button {
-    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  .contact_button {
+    margin-bottom: 2rem;
   }
   .container_texto-sobreMi {
     margin: 0;
@@ -1043,6 +1066,10 @@ footer {
     background: black;
   }
   .container_content-sobreMi {
+    flex-direction: column;
+  }
+  .container_button {
+    display: flex;
     flex-direction: column;
   }
   @media only screen and (min-width: 600px) {
