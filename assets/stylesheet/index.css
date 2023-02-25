@@ -978,9 +978,15 @@ footer {
   }
   .cv_button {
     margin-bottom: 1.5rem;
+    background: none;
+    color: rgb(44, 131, 189);
+    border: 1px solid rgb(44, 131, 189);
   }
   .contact_button {
     margin-bottom: 2rem;
+    background: none;
+    color: rgb(44, 131, 189);
+    border: 1px solid rgb(44, 131, 189);
   }
   .container_texto-sobreMi {
     margin: 0;
