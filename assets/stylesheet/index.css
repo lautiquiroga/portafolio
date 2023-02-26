@@ -939,8 +939,8 @@ footer {
     width: 100vw;
   }
   .links {
-    /* display: none; */
-    z-index: 100;
+    display: none;
+/*     z-index: 100; */
   }
   .header {
     background-color: transparent;
