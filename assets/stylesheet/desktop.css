@@ -1,3 +1,6 @@
+/* DESKTOP: MIN-WIDTH: 980px
+
+
 /* Header */
 
 .header {
@@ -52,7 +55,8 @@ div.btn {
 
 .image_home {
   object-fit: contain;
-  height: 680px;
+  /* height: 680px; */
+  width: 56rem;
 }
 
 .home_info {
@@ -105,8 +109,6 @@ div.btn {
   line-height: 2.8rem;
 }
 
-
-
 .container_button {
   display: flex;
 }
@@ -124,8 +126,6 @@ div.btn {
   box-shadow: 0px 2px 10px #141414;
   transition: 1s transform;
 }
-
-
 
 .links {
   width: 5%;
@@ -151,7 +151,7 @@ div.btn {
 .sobreMi h1 {
   margin-bottom: 4rem;
   font-size: 3rem;
-  color:rgb(44, 131, 189);
+  color: rgb(44, 131, 189);
 }
 
 .container_content-sobreMi {
@@ -176,8 +176,6 @@ div.btn {
   letter-spacing: 0.2rem;
   line-height: 2.8rem;
 }
-
-
 
 /* Formación */
 
@@ -264,12 +262,9 @@ div.btn {
   padding: 4rem 3rem;
 }
 
-
-
 @media only screen and (max-width: 1300px) {
-  
   .image_home {
-    width: 40rem;
+    width: 45rem;
   }
   .container_parrafo-info p {
     font-size: 1.5rem;
@@ -279,7 +274,6 @@ div.btn {
   .home_text-2 {
     font-size: 5rem;
     margin-bottom: 1rem;
-
   }
   .home_text-1 {
     font-size: 3rem;
@@ -289,7 +283,7 @@ div.btn {
     padding-right: 0;
   }
   .home_text-3 {
-   font-size: 2rem;
+    font-size: 2rem;
   }
   .home {
     padding: 0;
@@ -304,5 +298,34 @@ div.btn {
   }
   .container_content-sobreMi {
     flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+  .image_home {
+    width: 48rem;
+  }
+  .home_text-2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  .home_text-1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .header {
+    padding-right: 0;
+  }
+  .home_text-3 {
+    font-size: 2rem;
+  }
+  .home {
+    padding: 0;
+  }
+  .container_image-sobreMi {
+    display: none;
+  }
+  .container_texto-sobreMi {
+    width: 100%;
 }
 }
