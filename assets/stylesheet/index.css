@@ -608,8 +608,10 @@ img.logo-sena {
 }
 
 .container_btn--proyectos {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 .container_btn--proyectos a {
@@ -956,7 +958,6 @@ footer {
   }
   .container_image-home {
     margin-top: 4rem;
-    align-items: end;
     margin-bottom: 0;
   }
 
@@ -1037,6 +1038,9 @@ footer {
   }
   .cards--proyectos {
     width: 350px;
+  }
+  .container_textCard--proyectos p {
+    margin-bottom: 9rem;
   }
   .container_btn--proyectos a {
     margin: 5px;
