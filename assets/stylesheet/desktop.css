@@ -307,10 +307,10 @@ div.btn {
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1450px) {
-  .image_home {
+  /* .image_home {
     width: 48rem;
-  }
-  .home_text-2 {
+  } */
+  /* .home_text-2 {
     font-size: 5rem;
     margin-bottom: 1rem;
   }
@@ -326,7 +326,7 @@ div.btn {
   }
   .home {
     padding: 0;
-  }
+  } */
   .container_image-sobreMi {
     display: none;
   }
