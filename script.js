@@ -78,7 +78,7 @@ document.querySelector(".go-top-container").addEventListener("click", () => {
 
 //   if (!email || !nombre || !mensaje) {
 //     alert('Todos los campos son obligatorios')
-//   } 
+//   }
 //   else if (!validarEmail(email)){
 //     alert('El email no es válido');
 //   }
@@ -93,7 +93,7 @@ document.querySelector(".go-top-container").addEventListener("click", () => {
 //   formulario.setAttribute('netlify');
 // }
 
-// function validarEmail(target){  
+// function validarEmail(target){
 //   const regex =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
 //   const resultado = regex.test(target);
 //   return resultado;
@@ -109,20 +109,20 @@ document.querySelector(".go-top-container").addEventListener("click", () => {
 //   }
 // });
 
-const penultimo = document.querySelector('.penultimo');
-const ultimo = document.querySelector('.ultimo');
-mobile();
+// const penultimo = document.querySelector('.penultimo');
+// const ultimo = document.querySelector('.ultimo');
+// mobile();
 
 
-function mobile() {
-  if (window.innerWidth < 1300) {
+// function mobile() {
+//   if (window.innerWidth < 1300) {
 
-    penultimo.setAttribute("data-aos", "zoom-in-up");
-    penultimo.setAttribute("data-aos-anchor-placement", "center-bottom");
+//     penultimo.setAttribute("data-aos", "zoom-in-up");
+//     penultimo.setAttribute("data-aos-anchor-placement", "center-bottom");
 
-    ultimo.setAttribute("data-aos", "zoom-in-up");
-    ultimo.setAttribute("data-aos-anchor-placement", "center-bottom");  
-  }
-}
+//     ultimo.setAttribute("data-aos", "zoom-in-up");
+//     ultimo.setAttribute("data-aos-anchor-placement", "center-bottom");
+//   }
+// }
 
 AOS.init()

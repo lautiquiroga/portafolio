@@ -92,6 +92,7 @@ nav.nav_menu.active {
   0% {
     left: 100%;
   }
+
   100% {
     left: 0;
   }
@@ -138,7 +139,7 @@ nav.nav_menu.not-active a {
   position: relative;
 }
 
-span + span {
+span+span {
   margin-top: 0.6rem;
 }
 
@@ -171,10 +172,12 @@ span + span {
     top: 0;
     transform: rotate(0);
   }
+
   50% {
     top: 1rem;
     transform: rotate(0);
   }
+
   100% {
     top: 1rem;
     transform: rotate(45deg);
@@ -186,10 +189,12 @@ span + span {
     top: 0.8rem;
     transform: rotate(45deg);
   }
+
   50% {
     top: 0.8rem;
     transform: rotate(0deg);
   }
+
   100% {
     top: 0;
     transform: rotate(0deg);
@@ -201,10 +206,12 @@ span + span {
     bottom: 0;
     transform: rotate(0);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0.8rem;
     transform: rotate(135deg);
@@ -216,10 +223,12 @@ span + span {
     bottom: 0.8rem;
     transform: rotate(135deg);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0;
     transform: rotate(0);
@@ -230,6 +239,7 @@ span + span {
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(0);
   }
@@ -239,9 +249,11 @@ span + span {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
@@ -316,6 +328,7 @@ span + span {
   0% {
     left: 0;
   }
+
   100% {
     left: 110%;
   }
@@ -362,6 +375,7 @@ span + span {
   box-shadow: 0px 2px 10px #141414;
   transition: 1s transform;
 }
+
 .links {
   display: flex;
   justify-content: center;
@@ -503,6 +517,10 @@ img.logo-sena {
   margin: 5rem 0;
 }
 
+.react {
+  width: 15rem !important;
+}
+
 .cards--formacion :first-child {
   color: var(--light-grey);
   font-family: "Cooper Hewitt";
@@ -538,6 +556,7 @@ img.logo-sena {
   letter-spacing: 0.1rem;
   padding-bottom: 3rem;
 }
+
 .proyectos h6 {
   display: block;
   text-align: center;
@@ -914,10 +933,12 @@ footer {
     width: 0;
     height: 0;
   }
+
   50% {
     width: 7rem;
     height: 7rem;
   }
+
   100% {
     width: 6rem;
     height: 6rem;
@@ -930,6 +951,7 @@ footer {
     flex-direction: column-reverse;
     padding: 0;
   }
+
   .image_home {
     width: 25rem;
     /* filter: brightness(0.8); */
@@ -941,21 +963,26 @@ footer {
   html {
     width: 100vw;
   }
+
   .links {
     display: none;
     z-index: 100;
   }
+
   .header {
     background-color: transparent;
     /* padding: 1rem; */
   }
+
   .header #button {
     margin-right: -20px;
   }
+
   .header.abajo {
     backdrop-filter: none;
     background: black;
   }
+
   .container_image-home {
     margin-top: 4rem;
     margin-bottom: 0;
@@ -964,47 +991,56 @@ footer {
   .home {
     padding: 0;
   }
+
   .home_info {
     margin: 1rem 0 1rem 0;
     text-align: center;
     margin-top: 8rem;
   }
+
   .image_home {
     width: 270px;
     z-index: -10;
   }
+
   .home_text-1 {
     /* margin-top: 8rem; */
     align-items: start;
     font-size: 2.5rem;
   }
+
   .home_text-2 {
     align-items: start;
     font-size: 3.5rem;
     margin-bottom: 0;
   }
+
   .home_text-3 {
     margin-top: 3.5rem;
     margin-bottom: 4rem;
     text-align: center;
     font-size: 2.7rem;
   }
+
   .cv_button {
     margin-bottom: 1.5rem;
     background: none;
     color: rgb(44, 131, 189);
     border: 1px solid rgb(44, 131, 189);
   }
+
   .contact_button {
     /* margin-bottom: 2rem; */
     background: none;
     color: rgb(44, 131, 189);
     border: 1px solid rgb(44, 131, 189);
   }
+
   .container_texto-sobreMi {
     margin: 0;
     padding: 5rem 3rem 5rem 3rem;
   }
+
   .sobreMi h1 {
     font-family: "Cooper Hewitt";
     color: rgb(44, 131, 189);
@@ -1015,51 +1051,65 @@ footer {
     letter-spacing: 0.1rem;
     font-weight: 700;
   }
+
   .image_sobreMi {
     display: none;
   }
+
   .texto_sobreMi {
     font-size: 2rem;
     text-align: start;
     line-height: 3rem;
   }
+
   .texto_sobreMi span {
     display: none;
   }
+
   .formacion h1 {
     padding-top: 5rem;
     font-size: 2.5rem;
   }
+
   .proyectos h1 {
     padding-top: 3rem;
     font-size: 2.5;
   }
+
   .text-type::after {
     display: none;
   }
+
   .cards--proyectos {
     width: 350px;
   }
+
   .container_textCard--proyectos p {
     margin-bottom: 9rem;
   }
+
   .container_btn--proyectos a {
     margin: 5px;
   }
+
   .contacto h1 {
     font-size: 2.5rem;
   }
+
   .container_btn--proyectos button {
     width: 12rem !important;
   }
+
   .go-top-container {
     right: -2rem;
     bottom: -2rem;
   }
+
   .go-top-button {
     background-color: black;
     z-index: 500;
   }
+
   .show .go-top-button {
     animation: btn 0.3s ease-in-out;
     width: 4rem;
@@ -1067,52 +1117,64 @@ footer {
     z-index: 11;
     -webkit-animation: btn 0.3s ease-in-out;
   }
+
   @keyframes btn {
     0% {
       width: 0;
       height: 0;
     }
+
     50% {
       width: 5rem;
       height: 5rem;
     }
+
     100% {
       width: 4rem;
       height: 4rem;
     }
   }
+
   .go-top-button:hover {
     background: black;
   }
+
   .container_content-sobreMi {
     flex-direction: column;
   }
+
   .container_button {
     display: flex;
     flex-direction: column;
   }
+
   @media only screen and (min-width: 600px) {
     .home {
       flex-direction: row-reverse;
       /* padding-left: 12rem; */
       /* justify-content: space-evenly; */
     }
+
     .home_info {
       width: 50%;
       height: 50%;
       margin-top: 5rem;
       margin-bottom: 5rem;
     }
+
     .home_text-1 {
       margin-top: 0;
     }
+
     .container_image-home {
       width: 50%;
       height: 50%;
     }
+
     .links {
       display: none;
     }
+
     .cards--proyectos {
       width: 50rem;
       height: rem;
