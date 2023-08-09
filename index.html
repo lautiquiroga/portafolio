@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="robots" content="index,follow" />
+
+  <link rel="shortcut icon" href="./assets/images/portfolio-icon.png" type="image/png">
+  <title>Lautaro Quiroga - Web Developer</title>
+  <meta name="description"
+    content="Hola! Soy Lautaro Quiroga, Desarrollador Web. En este portafolio podrás encontrar los proyectos en donde trabajé, mi currículum, medios de contacto..." />
+  <meta name="theme-color" content="#906121" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="og:type" content="website" />
+  <meta property="og:title" name="twitter:title" content="Lautaro Quiroga, Desarrollador Web" />
+  <meta property="og:url" name="twitter:url" content="https://www.lautaro.ga/" />
+  <meta property="og:description" name="twitter:description"
+    content="Hola! Soy Lautaro Quiroga, Desarrollador Web. En este portafolio podrás encontrar los proyectos que aprendí, mi currículum, medios de contacto..." />
+  <!-- <meta property="og:image" content="./assets/images/vista-previa.png"> -->
+
+  <!-- Librerías -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Hojas de estilo -->
+  <!-- <link rel="stylesheet" href="./assets/stylesheet/loader.css" /> -->
+  <link rel="stylesheet" href="./assets/stylesheet/index.css" />
+  <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)" />
+  <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <!-- <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    /> -->
+</head>
+
+<body>
+  <div class="container--loader">
+    <div class="loader"></div>
+  </div>
+
+  <header class="header">
+    <img src="./assets/images/icon-web.png" alt="Logo Portafolio" class="logo__header" />
+
+    <nav class="nav_menu not-active">
+      <a href="#home" class="active">Inicio</a>
+      <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+      <a href="#formacion" data-section="menu" data-value="item3">Tecnologías</a>
+      <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+      <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+    </nav>
+
+    <div id="button" class="btn not-active">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="home" id="home">
+      <picture class="container_image-home" data-aos="zoom-in">
+        <img class="image_home" src="./assets/images/foto-camisa.jpeg" alt="perfil" />
+      </picture>
+
+      <div class="home_info">
+        <div class="container_text-info">
+          <p class="home_text-1" data-section="home" data-value="home_text-1">
+            Hola! Soy
+          </p>
+          <p class="home_text-2">Lautaro Quiroga</p>
+        </div>
+
+        <div>
+          <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">
+            Desarrollador Web
+          </p>
+        </div>
+
+        <div class="container_parrafo-info">
+          <p data-section="home" data-value="parrafo-info">
+            Soy programador con un año de experiencia en el desarrollo de páginas web. Poseo
+            habilidades avanzadas en FrontEnd con HTML5, CSS3, SCSS, JavaScript y React. Tengo conocimientos sobre el
+            Backend, PostgreSQL con Sequelize para la base de datos y Express para Node.js. Estoy participando en el
+            desarrollo de páginas web con un equipo de trabajo, actualmente mi rol se centra en el FrontEnd con React y
+            SCSS.
+          </p>
+        </div>
+
+        <div class="container_button">
+          <a href="./assets/lautaro-quiroga-cv.pdf" target="_blank">
+            <button class="cv_button" data-section="home" data-value="cv_button">
+              Descargar CV
+            </button>
+          </a>
+          <a href="#proyectos">
+            <button class="contact_button" data-section="home" data-value="btn_demo">
+              Proyectos
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/in/lautaro-quiroga/" target="_blank">
+          <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" class="icon-linkedin" />
+        </a>
+        <a href="https://wa.me/+543512780528" target="_blank">
+          <img src="./assets/images/icon-wpp.png" alt="Whatsapp" class="icon-wpp" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="sobreMi" id="sobreMi">
+
+
+      <div class="container_content-sobreMi">
+        <div class="container_texto-sobreMi">
+          <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">
+            <h1 data-section="sobre-mi" data-value="title">Sobre mí</h1>
+            Cuento con un año de experiencia en el desarrollo de páginas web. Mis
+            habilidades avanzadas en FrontEnd abarcan HTML5, CSS3, SCSS, JavaScript y React para el desarrollo de
+            interfaces interactivas. También cuento con conocimientos en el lado del
+            Backend, utilizando PostgreSQL con Sequelize como base de datos y Express para Node.js.
+            <br>
+            <br>
+            Participé activamente en proyectos de desarrollo de páginas web utilizando React y SCSS, lo que me permitió
+            adquirir experiencia práctica y mejorar mis habilidades técnicas. Estoy comprometido
+            con seguir creciendo en el mundo de la programación web y ansío enfrentar nuevos desafíos para seguir
+            perfeccionándome.
+
+          </span>
+        </div>
+
+        <picture class="container_image-sobreMi">
+          <img class="image_sobreMi" src="./assets/images/pc.jpg" alt="programing" />
+        </picture>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- ESTUDIOS -->
+    <section class="formacion" id="formacion">
+      <h1 data-section="formacion" data-value="title">Tecnologías</h1>
+
+      <div class="cards_container--formacion">
+        <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <img class="logo-unal" src="./assets/images/logo-html.png" alt="Logo - HTML" />
+          <div class="container_texto--formacion">
+            <p>HTML5</p>
+
+
+          </div>
+        </div>
+
+
+
+        <div class="cards--formacion" data-aos="fade-down" data-aos-duration="500">
+          <img class="logo-one" src="./assets/images/logo-css.png" alt="Logo - JavaScript" />
+          <div class="container_texto--formacion">
+            <p>CSS3</p>
+
+
+          </div>
+        </div>
+
+        <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <img class="logo-sena" src="./assets/images/logo-js.png" alt="Logo - JavaScript" />
+          <div class="container_texto--formacion">
+            <p>JavaScript</p>
+          </div>
+        </div>
+
+        <div class="cards--formacion" data-aos="fade-down">
+          <img class=" logo-sena react" src="./assets/images/icon-React.png" alt="Logo - React" />
+          <div class="container_texto--formacion">
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Proyectos -->
+    <section class="proyectos" id="proyectos">
+      <h1 data-section="proyectos" data-value="title">Proyectos</h1>
+      <h6 data-section="proyectos" data-value="title">
+      </h6>
+      <div class="cards_container--proyectos">
+
+
+
+        <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/gopage.png" alt="Proyecto: carrito" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>Portafolio GoPage</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              El proyecto es una LandingPage destinada a una empresa de desarrollo web. Está realizada con React y SCSS.
+              Cuenta con diseño responsivo y un código prolijo y bien estructurado.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://gopage.vercel.app/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/dileo24/portafolioGP" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/quickbites.jpg" alt="Proyecto: gasto semanal" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>QuickBites - Menú Virtual</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              Es una aplicación web FullStack que está destinada a restaurantes. Cuenta con un apartado para los
+              clientes y otro para administradores. Le permite a los clientes físicos del restaurante poder
+              hacer pedidos desde la mesa usando la aplicación. Los administradores, pueden editar el Menú y administrar
+              los
+              pedidos hechos por los clientes, entre otras funcionalidades.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://drive.google.com/file/d/1xUDvR8zUedQkcGDA92OiHaVwqCYUlrUi/view" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <!-- <a href="https://github.com/lautiquiroga/Gasto-Semanal/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a> -->
+          </div>
+        </div>
+
+        <!-- <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/To-Do-List.png" alt="Proyecto: To-Do List" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto1">
+              <b>To-Do List</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto1">
+              Este proyecto es una lista de tareas con una interfaz de usuario intuitiva, que permite a los usuarios
+              agregar o eliminar tareas fácilmente. <br />Además, incluye una función de almacenamiento local que guarda
+              las tareas pendientes en el navegador, permitiendo que los usuarios cierren la página web sin perder sus
+              datos.
+
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/To-Do-List/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/To-Do-List/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div> -->
+
+
+
+        <!-- <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/carrito.png" alt="Proyecto: carrito" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>Carrito de Compras</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              Este proyecto, consiste en un carrito de compras en línea con un menú desplegable intuitivo, que permite a
+              los usuarios agregar y eliminar artículos, así como vaciar todo el contenido del carrito en un solo clic.
+              <br />
+              Además, incorpora la función de LocalStorage, lo que garantiza que los artículos seleccionados por el
+              usuario no se borren, incluso si la página se recarga o se cierra accidentalmente.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/carrito-LS/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/carrito-LS/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div>-->
+
+        <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/adm-citas.png" alt="Proyecto: Administrador" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto1">
+              <b>Administrador de Pacientes</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto1">
+              El proyecto está diseñado para que el personal del área de salud, pueda administrar fácilmente sus citas
+              con los pacientes. Permite a los usuarios crear citas y actualizar la información de los pacientes. <br>
+              El código está organizado en clases y módulos, para mejorar la organización y estructura. Además,
+              incorpora el uso de IndexedDB para guardar localmente los datos de los pacientes.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/Administrador-de-Pacientes/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/Administrador-de-Pacientes/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/gasto.png" alt="Proyecto: gasto semanal" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>Gasto Semanal</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              El proyecto permite establecer un presupuesto semanal y hacer un seguimiento de gastos. Los usuarios
+              pueden ingresar el monto que desean gastar en una semana y luego ir agregando los gastos específicos. La
+              página web mostrará el saldo restante y avisará al usuario si está a punto de superar su presupuesto.
+              Contiene la funcionalidad de LocalStorage.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/Gasto-Semanal/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/Gasto-Semanal/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="cards--proyectos card_portafolio penultimo">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/buscador.png" alt="Proyecto: buscador" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>Buscador de Autos</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              El proyecto está destinado a una agencia de automóviles. Permite a los clientes buscar vehículos en el
+              catálogo según sus preferencias, utilizando un filtro.<br /> Los resultados se presentan en una lista de
+              autos que cumplen con los criterios de búsqueda del usuario.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/Buscador-Autos/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/Buscador-Autos/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="cards--proyectos card_portafolio ultimo">
+          <div class="container_imgCard--proyectos">
+            <img src="./assets/images/adm-citas.png" alt="Proyecto: Administrador" />
+          </div>
+
+          <div class="container_textCard--proyectos">
+            <h2 data-section="proyectos" data-value="title-proyecto2">
+              <b>Administrador de Pacientes</b>
+            </h2>
+            <p data-section="proyectos" data-value="info-proyecto2">
+              El proyecto está diseñado para que el personal del área de salud, pueda administrar fácilmente sus citas
+              con los pacientes. Permite a los usuarios crear citas y actualizar la información de los pacientes. <br>
+              El código está organizado en clases y módulos, para mejorar la organización y estructura. Además,
+              incorpora el uso de IndexedDB para guardar localmente los datos de los pacientes.
+            </p>
+          </div>
+
+          <div class="container_btn--proyectos">
+            <a href="https://lautiquiroga.github.io/Administrador-de-Pacientes/" target="_blank">
+              <button class="btn_demo">
+                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración" />DEMO
+              </button>
+            </a>
+
+            <a href="https://github.com/lautiquiroga/Administrador-de-Pacientes/tree/gh-pages" target="_blank">
+              <button class="btn_repo">
+                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github" />REPO
+              </button>
+            </a>
+          </div>
+        </div>  -->
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+      <h1 data-section="contacto" data-value="title">Contacto</h1>
+
+      <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="container--contacto">
+            <form id="form" class="form-contact" action="https://formsubmit.co/lautiquiroga10@gmail.com" method="POST"
+              name="contacto-portafolio" netlify>
+              <input type="hidden" name="_subject" value="Nuevo correo del PORTAFOLIO" />
+              <input type="hidden" name="_captcha" value="false" />
+              <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/" /> -->
+              <input id="nombre" type="text" name="name" placeholder="Ingrese su nombre..."
+                title="Este campo solo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                required />
+              <input id="email" type="email" name="email" placeholder="Ingrese su email..."
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
+              <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Déjame un mensaje!"
+                required></textarea>
+
+              <div class="btn_form--contacto">
+                <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contianer--footer">
+      <div class="container_redes-footer">
+        <a href="https://www.linkedin.com/in/lautaro-quiroga/" target="_blank">
+          <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" />
+        </a>
+
+        <a href="https://wa.me/+543512780528" target="_blank">
+          <img src="./assets/images/icon-wpp.png" alt="Whatsapp">
+        </a>
+      </div>
+
+      <div class="container_text--footer">
+        <span>Copyright © | Lautaro Quiroga</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </div>
+
+  <!-- Archivo Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Librería de animaciones -->
+  <!-- <script>
+    AOS.init();
+  </script> -->
+
+  <!-- Mi script -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
